@@ -1,0 +1,37 @@
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+// Add fonts to project as needed by updating the $fonts map below in the following format -
+// 'font-group-name': 'font-name'
+
+$primary-font: Charter, "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+@font-face {
+  font-family: 'GoodDog';
+  src: url('../fonts/GoodDog/GoodDog.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GoodDog/GoodDog.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GoodDog/GoodDog.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GoodDog/GoodDog.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GoodDog/GoodDog.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GoodDog/GoodDog.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'gooddc';
+  src: url('../fonts/gooddc/gooddc.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gooddc/gooddc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/gooddc/gooddc.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/gooddc/gooddc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gooddc/gooddc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+// ----- Type ----- //
+
+// ----- Grid ----- //

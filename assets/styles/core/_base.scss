@@ -1,0 +1,33 @@
+// -------------------------------------
+//   Base
+// -------------------------------------
+// ----- Global defaults for Base-level tags (body, p, etc.)
+// -------------------------------------
+
+body {
+  font-family: $primary-font;
+  @include rem-sizing(font-size, .8);
+  color: #ed5f31;
+  text-align: center;
+}
+
+h1, h2, h3, p, span {
+  font-family: GoodDog;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    @include rem-sizing(font-size, 4.5);
+    display: block;
+    color: #FEDFBF;
+    margin: 0 auto;
+    width: 660px;
+    height: 95px;
+    background: url('../imgs/main-animal-banner.png') no-repeat;
+  }
+
+a {
+  text-decoration: none;
+  color: #EC5F30;
+}

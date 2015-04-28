@@ -1,0 +1,380 @@
+// -------------------------------------
+//   LOAD PAGE
+// -------------------------------------
+.hero {
+  background: url('../imgs/load-hero.png') center center no-repeat;
+  height: 500px;
+  max-width: 100%;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  span {
+    display: block;
+    font-family: GoodDog;
+    @include rem-sizing(font-size, 7);
+    line-height: 0rem;
+  }
+  h1 {
+    color: #ed5f31;
+    line-height: 2rem;
+    padding-top:25px;
+    @include rem-sizing(font-size, 1.8);
+    background: none;
+    span{
+      font-family: $primary-font;
+      @include rem-sizing(font-size, 1);
+      line-height: 0rem;
+      position: relative;
+      right: 50px;
+    }
+  }
+}
+
+.hero-content-wrap {
+  position: absolute;
+  top: 280px;
+  width: 768px;
+  height: 225px;
+  margin-left: -35px;
+}
+
+.load-animal {
+  background: url('../imgs/load-bubble.png') center center no-repeat;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  padding-top: 45px;
+
+  position: relative;
+  img {
+    max-width: 100%;
+    width: 130px;
+  }
+  &:last-child {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+.load-button {
+  width: 280px;
+  max-width: 100%;
+  height: 225px;
+  border: 5px solid #e96333;
+  padding-top: 30px;
+  margin: 0 5%;
+  position: relative;
+  bottom: 100px;
+  @include rem-sizing(font-size, 3.3);
+  line-height: 3.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  @include border-radius(60%);
+  @include linear-gradient(#f2c444, #f5cb43);
+  &:hover {
+    border: 5px solid #483f86;
+    color: #483F86;
+  }
+}
+
+// -------------------------------------
+//   section 2
+// -------------------------------------
+.map-left-side {
+  float: left;
+  width: 285px;
+  .logo {
+    display: block;
+    width: 172px;
+    height: 142px;
+    background: url('../imgs/logo.png');
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    margin: 15px auto;
+  }
+  .ir {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .map-text {
+    width: 314px;
+    height: 290px;
+    background: #f5ca43;
+    position: relative;
+    img {
+      position: absolute;
+      bottom: 15px;
+      right: 25px;
+    }
+  }
+}
+
+.map-right-side {
+  position: relative;
+  float: right;
+  width: 340px;
+  height: 460px;
+  background: url('../imgs/map-path.png') no-repeat;
+}
+
+.map-one {
+  background: url('../imgs/asian-plains.png');
+  width: 220px;
+  height: 195px;
+  top: 37px;
+  left: 35px;
+  color: #c83e6a;
+  &:hover {
+    background: url('../imgs/asian-plains-hover.png');
+  }
+}
+.map-two {
+  background: url('../imgs/african-rain-forest.png');
+  width: 145px;
+  height: 150px;
+  bottom: 170px;
+  left: 2px;
+  color: #6a8996;
+  &:hover {
+    background: url('../imgs/african-rain-forest-hover.png');
+  }
+}
+.map-three {
+  background: url('../imgs/african-plains.png');
+  width: 189px;
+  height: 145px;
+  bottom: 36px;
+  left: 5px;
+  color: #f5ca43;
+  &:hover {
+    background: url('../imgs/african-plains-hover.png');
+  }
+}
+.map-four {
+  background: url('../imgs/kid-zone.png');
+  width: 121px;
+  height: 205px;
+  bottom: 68px;
+  left: 195px;
+  color: #a3c747;
+  &:hover {
+    background: url('../imgs/kid-zone-hover.png');
+  }
+}
+
+.section-map {
+  position: absolute;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: gooddc;
+  @include rem-sizing(font-size, 3);
+  line-height: 2rem;
+  font-weight: lighter;
+  &:hover {
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+// -------------------------------------
+//   Main Animal
+// -------------------------------------
+.main-animal-bg {
+  font-family: gooddc;
+  text-align: center;
+  margin-top: 30px;
+}
+
+figure {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+  img {
+    height: 100px;
+    max-height: 100%;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+  }
+  img.main-otter {
+    height: 90px;
+  }
+  figcaption {
+    background: #a4cb48;
+    width: 134px;
+    height: 26px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-family: gooddc;
+    @include rem-sizing(font-size, 1.5);
+  }
+}
+
+.main-wrap-section2 {
+  margin-left: 17%;
+  .circle {
+    margin-right: 20%;
+  }
+}
+
+.circle {
+  float: left;
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  @include border-radius(50%);
+  background: #6a8c9a;
+  margin: 30px  15% 60px 0;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.animal-wrap {
+  position: relative;
+  bottom: 95px;
+  h1 {
+    position: relative;
+    top: 110px;
+    background: none;
+    font-weight: normal;
+    color: #4C2A03;
+    font-family: gooddc;
+  }
+}
+
+.banner {
+  background: url('../imgs/animal-banner.png') center center no-repeat;
+  height: 600px;
+  .thought-wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    &:last-child .thought{
+     position: relative;
+     bottom: 80px;
+   }
+   .thought {
+    background: url('../imgs/thought-blue.png') no-repeat;
+    width: 160px;
+    height: 158px;
+    display: inline-block;
+    position: relative;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    cursor: pointer;
+    margin: 0 10px;
+    &:hover {
+      -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+      animation: rotateplane 1.2s infinite ease-in-out;
+    }
+    &:first-child {
+      margin-top: 120px;
+    }
+
+    a.playSound{
+      position: absolute;
+      float: left;
+      top: 163px;
+      right: 65px;
+    }
+    figure {
+      img {
+        margin-top: 10px;
+        height: 70px;
+        max-height: 100%;
+      }
+      figcaption {
+        background: #d7295d;
+        color: #ffefb6;
+        outline: 2px solid red;
+        bottom: 20px;
+      }
+    }
+  }
+  .green {
+    background: url('../imgs/thought-green.png') no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+    }
+
+    .orange {
+      background: url('../imgs/bd-banner.png') center center no-repeat;
+    }
+
+    .tiger-bg h1,
+    .yellow-bg h1 {
+      color: #fedfbf;
+      line-height: 1.2em;
+    }
+
+
+    .animal {
+      position: relative;
+      top: 120px;
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .map-text {
+      padding: 20px;
+      text-align: left;
+      font-family: $primary-font;
+      font-size: 12px;
+      line-height: 1.3em;
+      color: #533f34;
+      font-weight: bold;
+      ul {
+        list-style-image: url('../imgs/bullet.png');
+      }
+    }
+
